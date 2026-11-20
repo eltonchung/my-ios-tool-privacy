@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>iBeaconLog 1.2 更新說明</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --muted: light-dark(#485765, #b5c2cf);
+      --line: light-dark(#d5dbe1, #414951);
+      --link: light-dark(#15569e, #92c8ff);
+    }
+    body {
+      max-width: 52rem;
+      margin: 0 auto;
+      padding: clamp(1rem, 4vw, 2.5rem);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
+      line-height: 1.65;
+    }
+    header { margin-bottom: 1.5rem; }
+    header p, figcaption { color: var(--muted); }
+    header p, h1 { margin: 0; }
+    h1 { font-size: clamp(1.7rem, 5vw, 2.45rem); line-height: 1.3; }
+    h2 { font-size: 1.2rem; margin-bottom: .35rem; }
+    p { margin: .45rem 0; }
+    figure { max-width: 30rem; margin: 1.5rem 0; }
+    figure a { display: block; }
+    img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: .6rem; box-sizing: border-box; }
+    figcaption { margin-top: .55rem; font-size: .95rem; }
+    a { color: var(--link); }
+    footer { border-top: 1px solid var(--line); margin-top: 1.5rem; padding-top: .75rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p>iBeaconLog 1.2 · TestFlight 更新說明</p>
+      <h1>正式支援iPhone DUO</h1>
+    </header>
+    <p>展開 iPhone Duo 時，畫面寬度足夠就會將監控狀態與進出紀錄左右並排。闔起手機後會切回單欄，一般 iPhone 直向也沿用原有的單欄畫面。</p>
+    <figure>
+      <a href="./iphone-duo.png" aria-label="開啟原尺寸的 iPhone Duo 截圖">
+        <img src="./iphone-duo.png" width="1398" height="2034" alt="iPhone Duo 闔起時，外螢幕以單欄依序顯示監控狀態、篩選選項及帶有完整日期時間的範例進出紀錄。">
+      </a>
+      <figcaption>iPhone Duo 模擬器的外螢幕。手機闔起時以單欄呈現，畫面中的進出紀錄均為範例。點選圖片可查看原尺寸。</figcaption>
+    </figure>
+    <h2>這次可以怎麼測</h2>
+    <p>在「進出紀錄」選擇「進入」或「離開」，進入編輯模式並勾選一筆紀錄。展開再闔起手機，確認篩選條件和所選紀錄都保留，日期、星期及秒數能完整閱讀。</p>
+  </main>
+  <footer><a href="../../support.html">iBeaconLog 使用支援</a></footer>
+</body>
+</html>
